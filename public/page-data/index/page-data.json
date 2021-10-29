@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-index-js",
+    "path": "/",
+    "result": {"data":{"allStrapiStats":{"edges":[{"node":{"id":"Stats_1","title":"Years of experience","stat_value":"20"}},{"node":{"id":"Stats_2","title":"Happy Cases","stat_value":"4000+"}},{"node":{"id":"Stats_3","title":"Awards achived","stat_value":"15"}}]},"allStrapiMessage":{"edges":[{"node":{"welcomeMessage":"Grade is good at explaining what I'm doing"}}]}},"pageContext":{}},
+    "staticQueryHashes": []}

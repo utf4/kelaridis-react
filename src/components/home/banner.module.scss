@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    background-color: #FAFBFA;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 100px;
+    min-height: calc(90vh - 90px);
+    @media (max-width:1400px) and (min-width:1200px) {
+        min-height: calc(70vh - 90px);
+    }
+    @media (max-width:1200px) and (min-width:960px) {
+        min-height: calc(60vh - 90px);
+    }
+    @media (max-width: 992px) {
+        display: block;
+    }
+
+}
+.welcome {
+    font-weight: normal;
+    font-size: 48px;
+    justify-content: center;
+    flex: 1;
+    padding: 60px 60px 60px 130px;
+    display: flex;
+    flex-direction: column;
+
+    button {
+        background-color: #54c9cc;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        max-width: 246px;
+        height: 56px;
+        border: 0px;
+        cursor: pointer;
+        color: #ffffff;
+        padding: 0px 20px ;
+        margin-bottom: 32px;
+    }
+    p 
+    {
+        @media (max-width:1200px) and (min-width:960px) {
+            font-size: 36px;
+        }
+        span {
+            font-weight: bold;
+        }
+    }
+    @media (max-width: 992px) {
+        display: block;
+        padding: 0px 20px;
+    }
+}
+
+.imageContainer {
+    flex: 1;
+    // background-image: url(../../images/person.png);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .boxDesign {
+        position: absolute;
+        bottom: -60px;
+        left: -60px;
+    }
+    .bannerPerson{
+        width: 100%;
+        object-fit: cover;
+        height: calc(90vh - 90px);
+        @media (max-width:1400px) and (min-width:1200px) {
+            height: 100%;
+        }
+        
+    }
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+
+.imageMobile {
+    // background-image: url(../../images/person.png);
+    // height: 100%;
+    // width: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 580px;
+    display: none;
+    .boxDesignMobile {
+        position: absolute;
+        bottom: -20px;
+        right: 22px;
+    }
+    @media (max-width: 992px) {
+        display: block;
+        min-height: 289px;
+    }
+    .bannerPersonMobile{
+        width: 100%;
+    }
+}

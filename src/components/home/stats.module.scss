@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px;
+    width: 100%;
+    position: relative;
+    .topSquare {
+        position: absolute;
+        bottom: 0px;
+        left: 10%;
+    }
+    .bottomSquare {
+        display: none;
+    }
+    @media (max-width: 768px) {
+        padding-top: 0px;
+    }
+    @media (max-width: 576px) {
+        .bottomSquare {
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            right: 10%;
+        }
+        .topSquare {
+            position: absolute;
+            top: 5%;
+            left: 10%;
+        }
+    }
+}
+.statCardContainer {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 576px) {
+        display: unset;
+    }
+}
+.statCard {
+    text-align: center;
+    min-width: 280px;
+    flex: 1;
+    :first-child {
+        font-size: 48px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-weight: bold;
+    }
+    @media (max-width: 968px) {
+        min-width: 250px;
+    }
+    @media (max-width: 768px) {
+        min-width: 200px;
+        padding-top: 0px;
+    }
+    @media (max-width: 576px) {
+        min-width: 200px;
+        display: block;
+        padding: 25px 0px;
+    }
+}
